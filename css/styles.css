@@ -84,6 +84,7 @@ color: var(--accent-color);
 /* Main title */
 .main{
     background-color: var(--secondary-background);
+    text-align: center;
 }
 
 .main-title {
@@ -124,7 +125,11 @@ color: var(--accent-color);
 /* Activity section */
 
 
+
 .activity-title{
+    padding-top: 94px;
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -133,12 +138,19 @@ color: var(--accent-color);
 }
 
 .avtivity-content{
+    margin-top: 0;
+    margin-bottom: 0;
     color:var(--secondary-font-color);
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
 }
 /* Work section */
+.work-title{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 .work-title,
 .team-prime{
     font-weight: 700;
