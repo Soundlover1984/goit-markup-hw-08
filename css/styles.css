@@ -72,6 +72,13 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+
 /* Main title */
 .main{
     background-color: var(--secondary-background);
@@ -95,6 +102,8 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 24px;
     cursor: pointer;
     border: none;
 }
@@ -195,6 +204,8 @@ letter-spacing: 0.03em;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 22px;
     border: none;
     cursor: pointer;
 }
