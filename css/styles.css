@@ -29,6 +29,15 @@ font-family: Roboto, sans-serif;
     outline: 2px dotted green;
 }
 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    outline: 2px solid tomato;
+}
+
 /* Site nav */
 .header-block{
 background-color: var(--primary-background);
@@ -114,12 +123,7 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    outline: 2px solid tomato;
-}
+
 
 /* Main title */
 .main{
@@ -132,7 +136,7 @@ color: var(--accent-color);
     padding-left: 252px;
     padding-right: 252px;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: var(--primary-background);
     font-weight: 900;
     font-size: 44px;
