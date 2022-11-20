@@ -42,17 +42,45 @@ background-color: var(--primary-background);
     text-decoration: none;
 }
 
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item{
+    outline: 2px solid red;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-font-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .site-nav .link.current{
 color: var(--accent-color);
+}
+
+
+
+.contact-nav{
+    display: flex;
+}
+
+.contact-nav .item {
+    outline: 2px solid red;}
+
+.contact-nav .item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .contact-nav .link {
@@ -239,6 +267,12 @@ letter-spacing: 0.03em;
 }
 
 /* Portfolio button */
+
+.button-styles{
+margin-bottom: 50px;
+}
+
+
 .prf-button {
     color: var(--primary-font-color);
     background-color: var(--button-current);
@@ -271,6 +305,8 @@ letter-spacing: 0.03em;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .examples-item{
@@ -278,4 +314,6 @@ letter-spacing: 0.03em;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    margin-top: 4px;
+    margin-bottom: 0;
 }
