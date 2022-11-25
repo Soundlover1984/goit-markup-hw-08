@@ -393,7 +393,7 @@ margin-bottom: 50px;
 }
 
 .examples-title{
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 0;
     color: var(--primary-font-color);
     font-weight: 700;
@@ -404,7 +404,7 @@ margin-bottom: 50px;
 
 .examples-item{
     margin-top: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     color: var(--secondary-font-color);
     font-size: 16px;
     line-height: 1.88;
@@ -414,4 +414,14 @@ margin-bottom: 50px;
 .examples-item, .examples-title {
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.link-style > img{
+    vertical-align: bottom;
+}
+
+.examples-border{
+    border: 1px solid var(--portfolio-border);
+    padding: 20px 0;
+    border-top: none;    
 }
