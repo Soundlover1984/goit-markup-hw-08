@@ -204,6 +204,17 @@ body {
   padding-bottom: 0;
 }
 
+.activity-icon {
+  display: flex;
+  background-color: var(--button-current);
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .list-activity::before {
   display: block;
   content: '';
