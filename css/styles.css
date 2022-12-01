@@ -204,7 +204,7 @@ body {
   padding-bottom: 0;
 }
 
-.list-activity::before {
+/* .list-activity::before {
   display: block;
   content: '';
   height: 120px;
@@ -230,7 +230,7 @@ body {
 
 .list-activity.astronaut:before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 /* Work section */
 
