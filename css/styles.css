@@ -11,6 +11,7 @@
   --header-block-line: #ececec;
   --portfolio-border: #eeeeee;
   --team-background: #c4c4c4;
+  --client-icon-border: #afb1b8;
 }
 
 body {
@@ -317,6 +318,34 @@ body {
 }
 .team-padding {
   padding: 30px 0;
+}
+
+/* Clients */
+
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
+}
+
+.client {
+  display: flex;
+  margin-right: -30px;
+}
+
+.client .item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-right: 30px;
+  border: 1px solid var(--client-icon-border);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
 }
 
 /* Footer */
