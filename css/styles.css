@@ -430,6 +430,12 @@ body {
   color: var(--accent-color);
 }
 
+.half-block{
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
 /* Footer join section */
 
 .join{
@@ -440,8 +446,44 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  text-align: left;
 }
+
+.list-icon-footer{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-item-footer{
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-social-link-footer{
+  color: var(--primary-background) ;
+  display: flex;
+  width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.team-social-icon-footer {
+  fill: currentColor;
+}
+
+.team-social-link-footer:hover,
+.team-social-link-footer:focus{
+ background-color: var(--accent-color);
+}
+
+
 
 /* Portfolio button */
 
