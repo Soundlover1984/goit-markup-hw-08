@@ -313,6 +313,7 @@ body {
 }
 
 .team-social-link{
+  color: var(--client-icon-border) ;
   display: flex;
   width: 100%;
   width: 100%;
@@ -322,19 +323,14 @@ body {
 }
 
 .team-social-icon {
-  fill: var(--client-icon-border);
-}
-
-.team-social-icon:hover,
-.team-social-icon:focus{
- fill: var(--primary-background);
+  fill: currentColor;
 }
 
 .team-social-link:hover,
 .team-social-link:focus{
  background-color: var(--accent-color);
+ color: var(--primary-background);
 }
-
 
 /* Clients */
 
@@ -435,8 +431,16 @@ body {
 }
 
 /* Footer join section */
+
 .join{
-  
+  color: var(--primary-background);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; 
 }
 
 /* Portfolio button */
