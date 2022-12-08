@@ -278,7 +278,6 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* outline: 1px solid tomato; */
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
   height: 70px;
