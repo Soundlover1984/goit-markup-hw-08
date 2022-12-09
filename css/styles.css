@@ -270,12 +270,10 @@ body {
 }
 .work-item {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .work-action {
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,13 +701,16 @@ body {
 }
 
 .modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   background-color: var(--primary-background);
-  display: flex;
   width: 30px;
   height: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 8px 8px 543px 490px;
+  cursor: pointer;
 }
