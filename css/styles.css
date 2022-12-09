@@ -23,6 +23,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -45,7 +49,6 @@ body {
 /* Site nav */
 .header-block {
   background-color: var(--primary-background);
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -285,10 +288,6 @@ body {
   height: 70px;
 }
 
-.work-item img {
-  vertical-align: top;
-}
-
 .work-action-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -440,7 +439,6 @@ body {
 
 /* Footer */
 .footer-block {
-  max-width: 1600px;
   background-color: var(--secondary-background);
   padding: 60px 0;
   margin-left: auto;
@@ -624,10 +622,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
-
-.link-style > img {
-  vertical-align: bottom;
 }
 
 .examples-border {
