@@ -397,6 +397,33 @@
          <use href=./images/symbol-defs2.svg#icon-close-black-2></use>
          </svg> 
         </button>
+        <div class="modal-container">
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="form" action="" autocomplete="on">
+          <div class="form-field">
+          <label class="form-label" for="name">Ім'я</label>
+          <input class="form-input" type="text" name="name" id="name" autofocus />
+          </div>
+          <div class="form-field">
+          <label class="form-label" for="tel">Телефон</label>
+          <input class="form-input" type="tel" name="tel" id="tel"/>
+          </div>
+          <div class="form-field">
+          <label class="form-label" for="email">Пошта</label>
+          <input class="form-input" type="email" name="email" id="email"/>
+          </div>
+          <div class="form-field">
+          <label class="form-label" for="comment">Коментар</label>
+          <textarea name="comment" rows="5" id="comment" placeholder="Введіть текст"></textarea>
+          </div>
+          
+          <input type="checkbox" name="accept" value="accept_rules" id="accept"/>
+          <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
+
+          <button type="submit">Відправити</button>
+
+        </form>
+        </div> 
       </div>
     </div>
    <script src="./js/modal.js"></script>

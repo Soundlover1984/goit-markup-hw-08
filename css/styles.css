@@ -707,3 +707,48 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+/* .modal-container{
+  padding: 40px;
+} */
+
+.modal-title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--primary-font-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 40px;
+}
+
+textarea{
+  resize: none;
+  height: 120px;
+}
+
+.form{
+  width: 448px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-input{
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 40px;
+}
+
+.form-label{
+  margin-bottom: 4px;
+}
