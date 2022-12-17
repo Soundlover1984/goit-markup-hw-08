@@ -414,13 +414,14 @@
           </div>
           <div class="form-field">
           <label class="form-label" for="comment">Коментар</label>
-          <textarea name="comment" rows="5" id="comment" placeholder="Введіть текст"></textarea>
+          <textarea class="textarea-form" name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </div>
           
-          <input type="checkbox" name="accept" value="accept_rules" id="accept"/>
-          <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
-
-          <button type="submit">Відправити</button>
+          <div class="form-checkbox">
+          <input class="input-checkbox" type="checkbox" name="accept" value="accept_rules" id="accept"/>
+          <label class="label-checkbox" for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          </div>
+          <button class="modal-button-submit" type="submit">Відправити</button>
 
         </form>
         </div> 
