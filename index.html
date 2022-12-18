@@ -388,6 +388,20 @@
                   </li>
                 </ul>
         </div>
+        <div>
+          <h2 class="join">Підпишіться на розсилку</h2>
+          <div class="footer-form-block">
+          <form>
+          <label for="email"></label>
+          <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" autofocus="none">
+          </form>
+          <button class="footer-submit-button" type="submit">Підписатися
+          <svg class="footer-button-icon" width="24" height="24">
+          <use href=./images/symbol-defs.svg#icon-send></use>
+          </svg>  
+          </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -433,11 +447,13 @@
           </div>
           
           <div class="form-checkbox">
-          <input class="input-checkbox" type="checkbox" name="accept" id="accept" value="accept_rules" id="accept"/>
+          <label class="label-checkbox">
+          <input class="input-checkbox" type="checkbox" name="accept" value="accept_rules"/>
           <svg class="checkbox-icon" width="16" height="15">
-          <use href=./images/symbol-defs.svg#icon-icon-check></use>
-          </svg> 
-          <label class="label-checkbox" for="accept"><span class="accept-mailing">Погоджуюся з розсилкою та приймаю <a href="#" class="terms">Умови договору</a></span></label>
+          <use href=./images/symbol-defs.svg#icon-check></use>
+          </svg>
+          <span class="accept-mailing">Погоджуюся з розсилкою та приймаю <a href="#" class="terms">Умови договору</a></span>
+          </label>
           </div>
 
           <button class="modal-button-submit" type="submit">Відправити</button>
