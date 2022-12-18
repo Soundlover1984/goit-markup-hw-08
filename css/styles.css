@@ -763,6 +763,7 @@ textarea{
   border: 1px solid var(--textarea-border);
   border-radius: 4px;
   padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label{
@@ -778,6 +779,7 @@ textarea{
   position: absolute;
   top: 29px;
   left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:focus-within >.input-icon{
@@ -788,12 +790,6 @@ textarea{
   border: 1px solid var(--accent-color);
   outline: none;
 }
-
-.textarea-form:focus{
-   border: 1px solid var(--accent-color);
-  outline: none;
-}
-
 
 .textarea-form::placeholder{
   color: var(--placeholder-color);
@@ -809,11 +805,19 @@ textarea{
   height: 120px;
   border: 1px solid var(--textarea-border);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-form:focus{
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .form-checkbox{
+  position: relative;
   margin-top: 20px;
   text-align: center;
+  outline: 1px solid tomato;
 }
 
 .accept-mailing{
@@ -827,6 +831,23 @@ textarea{
 .terms{
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+.input-checkbox{
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.checkbox-icon{
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 12px;
+  width: 16px;
+  height: 15px;
+  /* border: 2px solid var(--primary-font-color);
+  border-radius: 4px; */
 }
 
 .modal-button-submit {
