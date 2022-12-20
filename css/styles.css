@@ -694,7 +694,7 @@ img {
   overflow: hidden;
 }
 
-/* Modal  */
+/* Examples overlay */
 
 .overlay {
   position: absolute;
@@ -722,6 +722,8 @@ img {
   padding: 63px 24px;
   color: var(--primary-background);
 }
+
+/* Modal  */
 
 .backdrop {
   position: fixed;
