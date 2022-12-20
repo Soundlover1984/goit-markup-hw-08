@@ -495,6 +495,10 @@ img {
   align-items: baseline;
 }
 
+.footer-content{
+  outline: 1px solid tomato;
+}
+
 /* Footer join section */
 
 .join {
@@ -553,6 +557,7 @@ img {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+  margin-right: 12px;
 }
 
 .footer-input::placeholder {
@@ -578,6 +583,7 @@ img {
   width: 200px;
   height: 50px;
   padding: 10px 28px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   cursor: pointer;
@@ -588,7 +594,7 @@ img {
 
 .footer-button-icon{
   fill: var(--primary-background);
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .footer-submit-button:hover,
@@ -598,7 +604,6 @@ img {
 
 .footer-form-block{
   display: flex;
-  gap: 12px;
 }
 
 /* Portfolio button */
@@ -811,8 +816,9 @@ textarea {
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
-  /* outline: 1px solid tomato; */
 }
+
+.form .form-field:nth-child(4)
 
 .form-input {
   margin-top: 0;
@@ -892,7 +898,11 @@ textarea {
 }
 
 .label-checkbox{
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  margin-left: 14px;
 }
 
 .input-checkbox {
@@ -903,10 +913,10 @@ textarea {
 
 .checkbox-icon {
   display: inline-block;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   transform: translatey(-50%);
-  left: -24px;
+  left: -24px; */
   fill: var(--primary-background);
   width: 16px;
   height: 15px;
