@@ -65,12 +65,12 @@ img {
   align-items: center;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header__logo {
+.main-nav__logo {
   color: var(--logo-color);
   font-family: Raleway;
   font-weight: 700;
@@ -80,7 +80,7 @@ img {
   text-decoration: none;
 }
 
-.header__web {
+.main-nav__web {
   color: var(--accent-color);
 }
 
@@ -628,19 +628,19 @@ img {
   display: flex;
 }
 
-/* Portfolio button */
+/* Портфоліо кнопки */
 
-.button-styles {
+.portfolio-button {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button-styles .item:not(:last-child) {
+.portfolio-button__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.prf-button {
+.portfolio-button__style {
   color: var(--primary-font-color);
   background-color: var(--button-current);
   font-family: inherit;
@@ -658,14 +658,14 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.prf-button:hover,
-.prf-button:focus {
+.portfolio-button__style:hover,
+.portfolio-button__style:focus {
   background-color: var(--accent-color);
   color: var(--primary-background);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/* Examples */
+/* Приклад робіт */
 
 .examples {
   display: flex;
@@ -674,23 +674,23 @@ img {
   margin-top: -30px;
 }
 
-.examples .item {
+.examples__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.examples .item:hover {
+.examples__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.link-style {
+.examples__link {
   text-decoration: none;
 }
 
-.examples-title {
+.examples__title {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-font-color);
@@ -700,7 +700,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.examples-item {
+.examples__kind {
   margin-top: 4px;
   margin-bottom: 0;
   color: var(--secondary-font-color);
@@ -709,20 +709,20 @@ img {
   letter-spacing: 0.03em;
 }
 
-.examples-border {
+.examples__border {
   border: 1px solid var(--portfolio-border);
   padding: 20px 24px;
   border-top: none;
 }
 
-.examples-box {
+.examples__box {
   position: relative;
   overflow: hidden;
 }
 
 /* Examples overlay */
 
-.overlay {
+.examples__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -733,11 +733,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.examples > .item:hover .overlay {
+.examples > .examples__item:hover .examples__overlay {
   transform: translatey(0);
 }
 
-.overlay-text {
+.examples__overlay-text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -786,7 +786,7 @@ img {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -802,16 +802,16 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal__button:hover,
+.modal__button:focus {
   fill: var(--accent-color);
 }
 
-.modal-container {
+.modal__container {
   padding: 40px;
 }
 
-.modal-title {
+.modal__title {
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--primary-font-color);
@@ -834,18 +834,18 @@ textarea {
   margin-top: 12px;
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
 }
 
-.form-field:nth-child(4) {
+.form__field:nth-child(4) {
   margin-bottom: 0;
 }
 
-.form-input {
+.form__input {
   margin-top: 0;
   margin-bottom: 0;
   height: 40px;
@@ -855,7 +855,7 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label {
+.form__label {
   margin-bottom: 4px;
   color: var(--secondary-font-color);
   font-weight: 400;
@@ -864,23 +864,23 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.input-icon {
+.form__input-icon {
   position: absolute;
   top: 29px;
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within > .input-icon {
+.form__field:focus-within > .form__input-icon {
   fill: var(--accent-color);
 }
 
-.form-input:focus {
+.form__input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.textarea-form::placeholder {
+.form__textarea::placeholder {
   color: var(--placeholder-color);
   font-weight: 400;
   font-size: 12px;
@@ -888,7 +888,7 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.textarea-form {
+.form__textarea {
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -897,17 +897,17 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-form:focus {
+.form__textarea:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.form-checkbox {
+.form__checkbox {
   margin-top: 20px;
   text-align: center;
 }
 
-.accept-mailing {
+.form__accept {
   color: var(--secondary-font-color);
   font-weight: 400;
   font-size: 14px;
@@ -915,25 +915,25 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.terms {
+.form__terms {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
-.label-checkbox {
+.form__label-checkbox {
   display: flex;
   gap: 7px;
   align-items: center;
   margin-left: 14px;
 }
 
-.input-checkbox {
+.form__input-checkbox {
   position: absolute;
   -webkit-appearance: none;
   appearance: none;
 }
 
-.checkbox-icon {
+.form__checkbox-icon {
   display: inline-block;
   fill: var(--primary-background);
   width: 16px;
@@ -944,13 +944,13 @@ textarea {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked ~ .checkbox-icon {
+.form__input-checkbox:checked ~ .form__checkbox-icon {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: var(--accent-color);
 }
 
-.modal-button-submit {
+.form__button {
   margin-top: 30px;
   display: flex;
   color: var(--primary-background);
@@ -970,7 +970,7 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-submit:hover,
-.modal-button-submit:focus {
+.form__button:hover,
+.form__button:focus {
   background-color: var(--active-button);
 }
