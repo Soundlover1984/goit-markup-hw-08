@@ -70,7 +70,7 @@ img {
   align-items: center;
 }
 
-.logo {
+.header__logo {
   color: var(--logo-color);
   font-family: Raleway;
   font-weight: 700;
@@ -80,7 +80,7 @@ img {
   text-decoration: none;
 }
 
-.logo__img {
+.header__web {
   color: var(--accent-color);
 }
 
@@ -397,9 +397,9 @@ img {
   color: var(--primary-background);
 }
 
-/* Clients */
+/* Клієнти */
 
-.client-title {
+.client__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -410,19 +410,19 @@ img {
   padding-top: 0;
 }
 
-.client {
+.client__list {
   display: flex;
   margin-right: -30px;
 }
 
-.client .item {
+.client__item {
   flex-basis: calc(100% / 6 - 30px);
   margin-right: 30px;
   width: 170px;
   height: 92px;
 }
 
-.client-link {
+.client__link {
   color: var(--client-icon-border);
   display: flex;
   width: 100%;
@@ -434,24 +434,33 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
 
 /* Footer */
-.footer-block {
+.footer {
   background-color: var(--secondary-background);
   padding: 60px 0;
   margin-left: auto;
   margin-right: auto;
 }
-.logo-footer {
+
+.footer__block {
+  display: flex;
+  gap: 93px;
+  align-items: baseline;
+}
+
+/* Контакти футера */
+
+.footer-contacts__logo {
   display: inline-block;
   margin-bottom: 28px;
   color: var(--primary-background);
@@ -462,7 +471,11 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.adress-footer {
+
+.footer-contacts__web {
+  color: var(--accent-color);
+}
+.footer-contacts__adress {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-background);
@@ -472,11 +485,11 @@ img {
   letter-spacing: 0.03em;
 }
 
-.contact-footer {
+.footer-contacts__list {
   margin-top: 12px;
 }
 
-.contact-footer .link {
+.footer-contacts__link {
   display: inline-block;
   color: var(--contact-footer);
   font-style: normal;
@@ -487,24 +500,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-footer .email {
+.footer-contacts__email {
   margin-bottom: 12px;
 }
 
-.contact-footer .link:hover,
-.contact-footer .link:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.half-block {
-  display: flex;
-  gap: 93px;
-  align-items: baseline;
-}
+/* Приєднуйтесь */
 
-/* Footer join section */
-
-.join {
+.footer-socials__title {
   color: var(--primary-background);
   margin-top: 0;
   margin-bottom: 20px;
@@ -516,13 +523,13 @@ img {
   text-align: left;
 }
 
-.list-icon-footer {
+.footer-socials__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-item-footer {
+.footer-socials__item {
   background-color: var(--team-item-footer-color);
   display: flex;
   width: 44px;
@@ -530,7 +537,7 @@ img {
   border-radius: 50%;
 }
 
-.team-social-link-footer {
+.footer-socials__link {
   color: var(--primary-background);
   display: flex;
   width: 100%;
@@ -541,18 +548,30 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-icon-footer {
+.footer-socials__icon {
   fill: currentColor;
 }
 
-.team-social-link-footer:hover,
-.team-social-link-footer:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
   background-color: var(--accent-color);
 }
 
-/* Footer form section */
+/* Підпишіться на розсилку */
 
-.footer-input {
+.footer-form__title {
+  color: var(--primary-background);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.footer-form__input {
   color: var(--footer-placeholder);
   background-color: var(--secondary-background);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -564,7 +583,7 @@ img {
   margin-right: 12px;
 }
 
-.footer-input::placeholder {
+.footer-form__input::placeholder {
   color: var(--footer-placeholder);
   font-weight: 400;
   font-size: 16px;
@@ -574,7 +593,7 @@ img {
   align-items: center;
 }
 
-.footer-submit-button {
+.footer-form__button {
   display: flex;
   color: var(--primary-background);
   background-color: var(--accent-color);
@@ -596,16 +615,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-button-icon {
+.footer-form__icon {
   fill: var(--primary-background);
 }
 
-.footer-submit-button:hover,
-.footer-submit-button:focus {
+.footer-form__button:hover,
+.footer-form__button:focus {
   background-color: var(--active-button);
 }
 
-.footer-form-block {
+.footer-form__block {
   display: flex;
 }
 
