@@ -1,0 +1,31 @@
+.contact-nav {
+  display: flex;
+  margin-left: 318px;
+}
+
+.contact-nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact-nav__link {
+  display: flex;
+  color: var(--secondary-font-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+}
+
+.contact-nav__link:hover,
+.contact-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.contact-nav__envelope-icon,
+.contact-nav__smartphone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

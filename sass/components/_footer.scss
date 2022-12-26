@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--secondary-background);
+  padding: 60px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__block {
+  display: flex;
+  gap: 93px;
+  align-items: baseline;
+}

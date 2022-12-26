@@ -1,0 +1,50 @@
+:root {
+  --primary-font-color: #212121;
+  --secondary-font-color: #757575;
+  --accent-color: #2196f3;
+  --primary-background: #ffffff;
+  --secondary-background: #2f303a;
+  --contact-footer: #ffffff60;
+  --logo-color: #000000;
+  --button-current: #f5f4fa;
+  --active-button: #188ce8;
+  --header-block-line: #ececec;
+  --portfolio-border: #eeeeee;
+  --team-background: #c4c4c4;
+  --client-icon-border: #afb1b8;
+  --team-item-footer-color: rgba(255, 255, 255, 0.1);
+  --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
+  --background-modal-color: rgba(0, 0, 0, 0.2);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+  --textarea-border: rgba(33, 33, 33, 0.2);
+  --footer-placeholder: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primary-font-color);
+  background-color: var(--primary-background);
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
