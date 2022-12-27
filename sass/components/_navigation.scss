@@ -2,18 +2,27 @@
   background-color: var(--primary-background);
   margin-right: auto;
   margin-left: auto;
+
+  &__line {
+  border-bottom: 1px solid var(--header-block-line);
+}
+
+&__container {
+  display: flex;
+  align-items: center;
+}
 }
 
 .header__line {
   border-bottom: 1px solid var(--header-block-line);
 }
 
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header__container {
+.main-nav {
   display: flex;
   align-items: center;
 }
