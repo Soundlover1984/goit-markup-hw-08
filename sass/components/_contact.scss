@@ -1,13 +1,12 @@
 .contact-nav {
   display: flex;
   margin-left: 318px;
-}
 
-.contact-nav__item:not(:last-child) {
+  &__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.contact-nav__link {
+&__link {
   display: flex;
   color: var(--secondary-font-color);
   font-weight: 500;
@@ -19,13 +18,15 @@
   align-items: center;
 }
 
-.contact-nav__link:hover,
-.contact-nav__link:focus {
+&__link:hover,
+&__link:focus {
   color: var(--accent-color);
 }
 
-.contact-nav__envelope-icon,
-.contact-nav__smartphone-icon {
+&__envelope-icon,
+&__smartphone-icon {
   margin-right: 10px;
   fill: currentColor;
 }
+}
+

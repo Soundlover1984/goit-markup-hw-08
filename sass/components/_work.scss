@@ -1,14 +1,16 @@
-.work__list {
+.work{
+
+&__list {
   display: flex;
   margin-right: -30px;
 }
 
-.work__item {
+&__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
 }
 
-.work__title {
+&__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -18,11 +20,11 @@
   margin-bottom: 50px;
   padding-top: 0;
 }
-.work__item {
+&__item {
   position: relative;
 }
 
-.work__action {
+&__action {
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -33,7 +35,7 @@
   height: 70px;
 }
 
-.work__action-title {
+&__action-title {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-background);
@@ -43,3 +45,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+}
+
