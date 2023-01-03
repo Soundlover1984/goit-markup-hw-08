@@ -705,6 +705,11 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 .work__list {
   display: -webkit-box;
   display: -ms-flexbox;
