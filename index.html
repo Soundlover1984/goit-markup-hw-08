@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Header-->
+     <!--Блок навігації-->
     <header class="header">
       <div class="header__mobile-menu js-menu-container">
         <ul class="header__form-list">
@@ -77,7 +77,7 @@
             <li class="header__item"><a href="" class="header__link">Контакти</a></li>
           </ul>
         </nav>
-        <!--Contacts-->
+        <!--Контакти-->
         <ul class="header__info">
           <li class="header__contacts">
             <a class="header__contact" href="mailto:info@devstudio.com">
@@ -98,7 +98,7 @@
         </ul>
       </div>
     </header>
-    <!--Main Block-->
+    <!--Основна частина-->
     <main>
       <section class="hero">
         <div class="container">
@@ -109,7 +109,7 @@
           <button data-modal-open class="hero__button" type="button">Замовити послугу</button>
         </div>
       </section>
-      <!--Main titles-->
+      <!--Діяльність-->
       <section class="section">
         <div class="container">
           <h2 class="main__title">Наш підхід</h2>
@@ -161,15 +161,15 @@
           </ul>
         </div>
       </section>
-      <!--About work-->
+      <!--Чим займаємось-->
       <section class="section work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__card-set">
             <li class="work__item">
               <img
-                srcset="./images/a1.jpg 1x, ./images/a1@2x.jpg 2x"
-                src="images/a1.jpg"
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="images/img1.jpg"
                 alt="HTML code typing"
                 width="370"
                 class="box"
@@ -178,8 +178,8 @@
             </li>
             <li class="work__item">
               <img
-                srcset="./images/a2.jpg 1x, ./images/a2@2x.jpg 2x"
-                src="images/a2.jpg"
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="images/img2.jpg"
                 alt="Page stylization"
                 width="370"
                 class="box"
@@ -188,8 +188,8 @@
             </li>
             <li class="work__item">
               <img
-                srcset="./images/a3.jpg 1x, ./images/a3@2x.jpg 2x"
-                src="images/a3.jpg"
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="images/img3.jpg"
                 alt="Color palette"
                 width="370"
                 class="box"
@@ -199,15 +199,15 @@
           </ul>
         </div>
       </section>
-      <!--Staff-->
+      <!--Команда-->
       <section class="section staff">
         <div class="container">
           <h2 class="staff__title">Наша команда</h2>
           <ul class="staff__card-set">
             <li class="staff__item">
               <img
-                srcset="./images/a4.jpg 1x, ./images/a4@2x.jpg 2x"
-                src="images/a4.jpg"
+                srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
+                src="images/img4.jpg"
                 alt="Photo of Igor Demyanenko"
                 width="270"
                 class="staff__item--frame"
@@ -249,8 +249,8 @@
             </li>
             <li class="staff__item">
               <img
-                srcset="./images/a5.jpg 1x, ./images/a5@2x.jpg 2x"
-                src="images/a5.jpg"
+                srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x"
+                src="images/img5.jpg"
                 alt="Photo of Olga Riepina"
                 width="270"
                 class="staff__item--frame"
@@ -292,8 +292,8 @@
             </li>
             <li class="staff__item">
               <img
-                srcset="./images/a6.jpg 1x, ./images/a6@2x.jpg 2x"
-                src="images/a6.jpg"
+                srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"
+                src="images/img6.jpg"
                 alt="Photo of Mykola Tarasov"
                 width="270"
                 class="staff__item--frame"
@@ -335,8 +335,8 @@
             </li>
             <li class="staff__item">
               <img
-                srcset="./images/a7.jpg 1x, ./images/a7@2x.jpg 2x"
-                src="images/a7.jpg"
+                srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x"
+                src="images/img7.jpg"
                 alt="Photo of Mykhaylo Yermakov"
                 width="270"
                 class="staff__item--frame"
@@ -379,7 +379,7 @@
           </ul>
         </div>
       </section>
-      <!--Customers-->
+      <!--Клієнти-->
       <section class="section">
         <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
@@ -430,7 +430,7 @@
         </div>
       </section>
     </main>
-    <!--Footer-->
+    <!--Футер-->
     <footer class="footer">
       <div class="footer__footer-center container">
         <div class="footer__block">
@@ -495,20 +495,16 @@
                 id="email"
                 placeholder="E-mail"
               />
-              <!-- <input type="checkbox" name="topic"> -->
-              <!-- <input type="radio" value="junior" name="" id=""> -->
-              <!-- <input type="datetime-local" name="date" id="date"> -->
-              <!-- <input type="file"> -->
-            </form>
-          </div>
-          <button class="footer__button" type="submit">
+               <button class="footer__button" type="submit">
             Підписатися
             <svg class="footer__button-form" width="24" height="24">
               <use href="./images/icons.svg#telegram"></use>
             </svg>
-          </button>
+            </button>
+            </form>
+          </div>
+         
         </div>
-        <!-- </div> -->
       </div>
     </footer>
     <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
