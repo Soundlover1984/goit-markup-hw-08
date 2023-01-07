@@ -1,248 +1,3 @@
-
-
-/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-/*
-Document
-========
-*/
-/**
-Use a better box model (opinionated).
-*/
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size (opinionated).
-*/
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4; /* 3 */
-}
-
-/*
-Sections
-========
-*/
-/**
-1. Remove the margin in all browsers.
-2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-body {
-  margin: 0; /* 1 */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
-}
-
-/*
-Grouping content
-================
-*/
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
-hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-}
-
-/*
-Text-level semantics
-====================
-*/
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Tabular data
-============
-*/
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-}
-
-/*
-Forms
-=====
-*/
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-button,
-select {
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-Restore the focus styles unset by the previous rule.
-*/
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-legend {
-  padding: 0;
-}
-
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-progress {
-  vertical-align: baseline;
-}
-
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/*
-Interactive
-===========
-*/
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
-}
-
 :root {
   --primary-font-color: #212121;
   --secondary-font-color: #757575;
@@ -329,7 +84,7 @@ img {
   }
 }
 
-.logo {
+.main-nav__logo {
   color: var(--accent-color);
   text-decoration: none;
   font-family: "Raleway";
@@ -338,16 +93,16 @@ img {
   line-height: 1.167;
 }
 @media screen and (min-width: 1200px) {
-  .logo {
+  .main-nav__logo {
     font-size: 26px;
     line-height: 1.19;
   }
 }
 
-.logo__black {
+.main-nav__logo-black {
   color: var(--primary-font-color);
 }
-.logo__black--inverse {
+.main-nav__logo-black--inverse {
   color: var(--primary-background);
 }
 
@@ -384,83 +139,76 @@ img {
   transition: fill, background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header {
+/* Блок навігації */
+
+.main-nav {
   border-bottom: 1px solid var(--header-block-line);
   position: relative;
 }
 
-.header .logo {
+.main-nav .main-nav__logo {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
-  .header .logo {
+  .main-nav .main-nav__logo {
     margin-right: 88px;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header .logo {
+  .main-nav .main-nav__logo {
     margin-right: 93px;
   }
 }
 
-.header__header-center {
+.main-nav__header-center {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 @media screen and (min-width: 1200px) {
-  .header__header-center {
+  .main-nav__header-center {
     justify-content: none;
   }
 }
 
-.header__navigation {
+.main-nav__navigation {
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .header__navigation {
+  .main-nav__navigation {
     margin-right: auto;
   }
 }
 
-.header__form-list {
-  margin-bottom: auto;
-}
-@media screen and (min-width: 768px) {
-  .header__form-list {
-    list-style: none;
-  }
-}
-
-.header__list {
+.main-nav__list {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .header__list {
+  .main-nav__list {
     display: flex;
     margin-right: auto;
   }
 }
 
-.header__item {
+.main-nav__item {
   padding: 32px 0;
   position: relative;
 }
-.header__item:not(:last-child) {
+.main-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header__form-item {
+.main-nav__form-item {
   padding: 0;
 }
-.header__form-item:not(:last-child) {
+.main-nav__form-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.header__link {
+.main-nav__link {
   display: block;
   color: var(--primary-font-color);
   text-decoration: none;
@@ -474,19 +222,19 @@ img {
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  .header__link {
+  .main-nav__link {
     font-size: 14px;
     line-height: 1.14;
   }
 }
-.header__link--current {
+.main-nav__link--current {
   color: var(--accent-color);
 }
-.header__link:hover, .header__link:focus {
+.main-nav__link:hover, .main-nav__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-.header__link--current::after {
+.main-nav__link--current::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -499,16 +247,16 @@ img {
   background-color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
-  .header__link--current::after {
+  .main-nav__link--current::after {
     display: inline-block;
   }
 }
 
-.header__link-social {
+.main-nav__link-social {
   color: var(--accent-color);
 }
 
-.header__contact {
+.main-nav__contact {
   display: flex;
   align-items: center;
   color: var(--secondary-font-color);
@@ -522,54 +270,55 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
-.header__contact:hover, .header__contact:focus {
+
+.main-nav__contact:hover, .main-nav__contact:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.header__info {
+.main-nav__info {
   display: flex;
   list-style: none;
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .header__info {
+  .main-nav__info {
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__info {
+  .main-nav__info {
     display: flex;
     flex-direction: row;
   }
 }
 
-.header__contacts {
+.main-nav__contacts {
   display: flex;
   align-items: center;
 }
-.header__contacts:not(:last-child) {
+.main-nav__contacts:not(:last-child) {
   margin-right: 0;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
-  .header__contacts:not(:last-child) {
+  .main-nav__contacts:not(:last-child) {
     margin-right: 40px;
     margin-bottom: 0;
   }
 }
 
-.header__margin {
+.main-nav__indent {
   margin-left: 8px;
 }
 @media screen and (min-width: 1200px) {
-  .header__margin {
+  .main-nav__indent {
     margin-left: 10px;
   }
 }
 
-.header__mobile-menu {
+.main-nav__mobile-menu {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -583,18 +332,18 @@ img {
   transform: translateX(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__mobile-menu.is-open {
+.main-nav__mobile-menu.is-open {
   display: flex;
   flex-direction: column;
   transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
-  .header__mobile-menu.is-open {
+  .main-nav__mobile-menu.is-open {
     display: none;
   }
 }
 
-.header__button {
+.main-nav__button {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -603,51 +352,61 @@ img {
   border: none;
 }
 @media screen and (min-width: 768px) {
-  .header__button {
+  .main-nav__button {
     display: none;
   }
 }
-.header__button:hover, .header__buttonfocus {
+.main-nav__button:hover, .main-nav__button:focus {
   cursor: pointer;
   fill: var(--accent-color);
 }
 
-.header__icon-close {
+.main-nav__icon-close {
   display: none;
 }
 
-.header__button.is-open .header__icon-close {
+.main-nav__button.is-open .main-nav__icon-close {
   display: block;
 }
 
-.header__button.is-open .header__icon-menu {
+.main-nav__button.is-open .main-nav__icon-menu {
   display: none;
 }
 
-.header__social-list {
+.main-nav__form-list {
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__form-list {
+    list-style: none;
+  }
+}
+
+.main-nav__social-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
   row-gap: 10px;
 }
 
-.header__social-item {
+.main-nav__social-item {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   color: var(--accent-color);
 }
 
-.header__social-item:not(:last-child) {
+.main-nav__social-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid var(--textarea-border);
 }
 
-.header__social-item:not(:first-child) {
+.main-nav__social-item:not(:first-child) {
   padding-left: 10px;
 }
 
-.header__form-tel {
+.main-nav__form-tel {
   color: var(--accent-color);
   display: block;
   font-weight: 500;
@@ -655,7 +414,7 @@ img {
   line-height: 1.176;
 }
 
-.header__form-mail {
+.main-nav__form-mail {
   color: var(--secondary-font-color);
   display: block;
   font-weight: 500;
@@ -664,7 +423,9 @@ img {
   margin-top: 32px;
 }
 
-.hero {
+/* Основна частина  */
+
+.main {
   background-color: var(--secondary-background);
   margin: 0 auto;
   max-width: 480px;
@@ -677,36 +438,36 @@ img {
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
+  .main {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .main {
     max-width: 768px;
     padding: 118px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
+  .main {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .main {
     max-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
+  .main {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main@2x.jpg);
   }
 }
 
-.hero__title {
+.main__title {
   color: var(--primary-background);
   text-transform: uppercase;
   margin-top: 0px;
@@ -716,13 +477,13 @@ img {
   line-height: 1.615;
 }
 @media screen and (min-width: 1200px) {
-  .hero__title {
+  .main__title {
     font-size: 44px;
     line-height: 1.36;
   }
 }
 
-.hero__button {
+.main__button {
   cursor: pointer;
   color: var(--primary-background);
   background-color: var(--accent-color);
@@ -736,33 +497,35 @@ img {
   line-height: 1.88;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__button:hover, .hero__button:focus {
+.main__button:hover, .main__button:focus {
   background-color: var(--active-button);
 }
 
-.main__title {
+/* Діяльність */
+
+.activity__title {
   display: none;
 }
 
-.main__item {
+.activity__item {
   max-width: 450px;
 }
 @media screen and (min-width: 768px) {
-  .main__item {
+  .activity__item {
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .main__item {
+  .activity__item {
     width: 270px;
   }
 }
 
-.main__item:not(:last-child) {
+.activity__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.main__subtitle {
+.activity__subtitle {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -772,31 +535,31 @@ img {
   margin-top: 30px;
 }
 
-.main__description {
+.activity__description {
   color: var(--secondary-font-color);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.main__card-set {
+.activity__card {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .main__card-set {
+  .activity__card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .main__card-set {
+  .activity__card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 }
 
-.main__icon {
+.activity__icon {
   background-color: var(--button-current);
   max-width: 450px;
   height: 120px;
@@ -836,7 +599,7 @@ img {
   margin-bottom: 50px;
 }
 
-.work__card-set {
+.work__card {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -863,6 +626,8 @@ img {
   font-size: 14px;
   line-height: 1.214;
 }
+
+/* Команда */
 
 .staff {
   background-color: var(--button-current);
