@@ -1,0 +1,32 @@
+.social__icon-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: var(--client-icon-border);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__icon:hover, .social__icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-background);
+  cursor: pointer;
+}
+.social__icon-footer {
+  background-color: var(--team-item-footer-color);
+  fill: var(--primary-background);
+  transition: fill, background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
