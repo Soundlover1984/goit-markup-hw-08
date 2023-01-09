@@ -1,4 +1,6 @@
-.client__title {
+.client {
+
+&__title {
   color: var(--primary-font-color);
   font-weight: 700;
   font-size: 36px;
@@ -8,18 +10,18 @@
   margin-bottom: 50px;
 }
 
-.client__icon {
+&__icon {
   fill: currentColor;
 }
 
-.client__card {
+&__card {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   width: 1ww;
 }
 
-.client__item {
+&__item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -27,29 +29,30 @@
   border: 1px solid var(--client-icon-border);
   border-radius: 4px;
   color: var(--client-icon-border);
-  width: calc((100vw - 60px) / 2);
+  width: calc((100% - 60px) / 2);
   height: 92px;
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__item:hover, .client__item:focus {
+&__item:hover, &__item:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
 @media screen and (min-width: 480px) {
-  .client__item {
+  &__item {
     width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
-  .client__item {
+  &__item {
     width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .client__item {
+  &__item {
     width: 170px;
   }
+}
 }

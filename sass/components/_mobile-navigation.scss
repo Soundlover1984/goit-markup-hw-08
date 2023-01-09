@@ -1,4 +1,6 @@
-.main-nav__mobile-menu {
+.main-nav {
+
+&__mobile-menu {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -12,18 +14,18 @@
   transform: translateX(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-nav__mobile-menu.is-open {
+&__mobile-menu.is-open {
   display: flex;
   flex-direction: column;
   transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
-  .main-nav__mobile-menu.is-open {
+  &__mobile-menu.is-open {
     display: none;
   }
 }
 
-.main-nav__button {
+&__button {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -32,61 +34,61 @@
   border: none;
 }
 @media screen and (min-width: 768px) {
-  .main-nav__button {
+  &__button {
     display: none;
   }
 }
-.main-nav__button:hover, .main-nav__button:focus {
+&__button:hover, &__button:focus {
   cursor: pointer;
   fill: var(--accent-color);
 }
 
-.main-nav__icon-close {
+&__icon-close {
   display: none;
 }
 
-.main-nav__button.is-open .main-nav__icon-close {
+&__button.is-open &__icon-close {
   display: block;
 }
 
-.main-nav__button.is-open .main-nav__icon-menu {
+&__button.is-open &__icon-menu {
   display: none;
 }
 
-.main-nav__form-list {
+&__form-list {
   margin-bottom: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .main-nav__form-list {
+  &__form-list {
     list-style: none;
   }
 }
 
-.main-nav__social-list {
+&__social-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
   row-gap: 10px;
 }
 
-.main-nav__social-item {
+&__social-item {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   color: var(--accent-color);
 }
 
-.main-nav__social-item:not(:last-child) {
+&__social-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid var(--textarea-border);
 }
 
-.main-nav__social-item:not(:first-child) {
+&__social-item:not(:first-child) {
   padding-left: 10px;
 }
 
-.main-nav__form-tel {
+&__form-tel {
   color: var(--accent-color);
   display: block;
   font-weight: 500;
@@ -94,11 +96,12 @@
   line-height: 1.176;
 }
 
-.main-nav__form-mail {
+&__form-mail {
   color: var(--secondary-font-color);
   display: block;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.667;
   margin-top: 32px;
+}
 }
