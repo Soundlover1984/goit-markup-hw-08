@@ -109,11 +109,13 @@
 
 
 .footer__form-input {
+  color: var(--footer-placeholder);
   width: 450px;
   height: 50px;
   border: solid 1px rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: rgb(47, 48, 58);
+  background-color: var(--secondary-background);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   margin: 0 auto;
   padding-left: 16px;
   margin-bottom: 20px;
@@ -128,6 +130,16 @@
     width: 358px;
     margin-right: 12px;
   }
+}
+
+.footer-form-input::placeholder {
+  color: var(--footer-placeholder);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
 }
 
 .footer__button {
