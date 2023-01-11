@@ -23,6 +23,12 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  &__list {
+    flex-basis: auto;
+  }
+}
+
 
 &__button:not(:last-child) {
   margin-right: 10px;
@@ -43,6 +49,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (max-width: 479px) {
+  &__button-item {
+    padding: 6px 18px;
+  }
+}
+
 &__button-item:hover, &__button-item:focus {
   background-color: var(--accent-color);
   color: var(--primary-background);

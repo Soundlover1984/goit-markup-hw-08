@@ -1514,6 +1514,12 @@ textarea {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 479px) {
+  .portfolio__list {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
 .portfolio__button:not(:last-child) {
   margin-right: 10px;
 }
@@ -1536,6 +1542,11 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .portfolio__button-item {
+    padding: 6px 18px;
+  }
 }
 .portfolio__button-item:hover, .portfolio__button-item:focus {
   background-color: var(--accent-color);
@@ -1601,6 +1612,11 @@ textarea {
     width: 370px;
   }
 }
+@media screen and (max-width: 479px) {
+  .portfolio__item {
+    width: 100%;
+  }
+}
 .portfolio__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1612,6 +1628,12 @@ textarea {
 .portfolio__picture {
   width: 100%;
   height: 294px;
+}
+@media screen and (max-width: 479px) {
+  .portfolio__picture {
+    width: 100%;
+    height: 100%;
+  }
 }
 .portfolio__overlay {
   position: absolute;
@@ -1641,6 +1663,12 @@ textarea {
   text-align: start;
   padding: 63px 24px;
   color: var(--primary-background);
+}
+@media screen and (max-width: 479px) {
+  .portfolio__overlay-text {
+    padding: 24px 24px;
+    font-size: 14px;
+  }
 }
 .portfolio__title {
   color: var(--primary-font-color);
@@ -1684,6 +1712,7 @@ textarea {
 
 .modal {
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1703,6 +1732,12 @@ textarea {
   .modal {
     width: 528px;
     height: 581px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: auto;
+    height: auto;
   }
 }
 .modal__button {
@@ -1748,6 +1783,11 @@ textarea {
     line-height: 1.15;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal__title {
+    font-size: 16px;
+  }
+}
 
 .form {
   width: 370px;
@@ -1758,6 +1798,11 @@ textarea {
 @media screen and (min-width: 1200px) {
   .form {
     width: 448px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .form {
+    width: 100%;
   }
 }
 .form__field {
@@ -1865,6 +1910,11 @@ textarea {
   line-height: 1.166;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 479px) {
+  .form__accept {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form__accept {
     font-size: 14px;
@@ -1901,6 +1951,12 @@ textarea {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .form__checkbox-icon {
+    width: 14%;
+    height: 14%;
+  }
+}
 .form__input-checkbox:checked ~ .form__checkbox-icon {
   background-color: var(--accent-color);
   border-color: transparent;
@@ -1931,4 +1987,9 @@ textarea {
 }
 .form__button:hover, .form__button:focus {
   background-color: var(--active-button);
+}
+@media screen and (max-width: 479px) {
+  .form__button {
+    padding: 10px 32px;
+  }
 }/*# sourceMappingURL=main.css.map */
