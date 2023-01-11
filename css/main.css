@@ -1398,6 +1398,11 @@ textarea {
     margin-right: 12px;
   }
 }
+@media screen and (max-width: 479px) {
+  .footer__form-input {
+    width: 100%;
+  }
+}
 .footer__form-input::-webkit-input-placeholder {
   color: var(--footer-placeholder);
   font-weight: 400;

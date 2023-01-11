@@ -131,6 +131,13 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  &__form-input {
+    width: 100%;
+    // margin-right: 12px;
+  }
+}
+
 &__form-input::placeholder {
   color: var(--footer-placeholder);
   font-weight: 400;
