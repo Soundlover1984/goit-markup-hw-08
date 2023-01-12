@@ -18,12 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-@media screen and (max-width: 479px) {
-  &__card {
-    flex-direction: column;
-  }
+  justify-content: center;
 }
 
 &__item {
@@ -34,8 +29,7 @@
   border: 1px solid var(--client-icon-border);
   border-radius: 4px;
   color: var(--client-icon-border);
-  // width: calc((100% - 60px) / 2);
-  width: auto;
+  width: 100%;
   height: 92px;
   transition-property: color, border;
   transition-duration: 250ms;
@@ -46,6 +40,7 @@
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
+
 @media screen and (min-width: 480px) {
   &__item {
     width: 210px;
