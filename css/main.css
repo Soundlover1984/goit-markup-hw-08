@@ -814,7 +814,6 @@ textarea {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 1;
   background-color: transparent;
   border: none;
 }
@@ -830,10 +829,10 @@ textarea {
 .main-nav__icon-close {
   display: none;
 }
-.main-nav__button.is-open .main-nav__icon-close {
+.main-nav__mobile-menu.is-open .main-nav__icon-close {
   display: block;
 }
-.main-nav__button.is-open .main-nav__icon-menu {
+.main-nav__mobile-menu.is-open .main-nav__icon-menu {
   display: none;
 }
 .main-nav__form-list {

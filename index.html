@@ -10,7 +10,16 @@
   <body>
      <!--Блок навігації-->
     <header class="main-nav">
-      <div class="main-nav__mobile-menu js-menu-container">
+      <div class="main-nav__mobile-menu js-menu-container" id="mobile-menu">
+        <button
+          type="button"
+          class="main-nav__button js-close-menu"
+          aria-expanded="false"
+        >
+          <svg width="40" height="40" aria-label="Перемикач меню">
+            <use class="main-nav__icon-close" href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
         <ul class="main-nav__form-list">
           <li class="main-nav__form-item">
             <a href="./index.html" class="main-nav__form-link main-nav__form-link--current">Студія</a>
@@ -47,18 +56,18 @@
         <a href="./index.html" class="main-nav__logo">Web<span class="main-nav__logo-black">Studio</span></a>
         <button
           type="button"
-          class="main-nav__button js-open-menu js-close-menu"
+          class="main-nav__button js-open-menu"
           aria-expanded="false"
+          aria-controls="mobile-menu"
         >
           <svg width="40" height="40" aria-label="Перемикач меню">
-            <use class="main-nav__icon-close" href="./images/icons.svg#close"></use>
             <use class="main-nav__icon-menu" href="./images/icons.svg#menu"></use>
           </svg>
         </button>
         <nav class="main-nav__navigation">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="" class="main-nav__link main-nav__link--current">Студія</a>
+              <a href="./index.html" class="main-nav__link main-nav__link--current">Студія</a>
             </li>
             <li class="main-nav__item">
               <a href="./portfolio.html" class="main-nav__link">Портфоліо</a>
