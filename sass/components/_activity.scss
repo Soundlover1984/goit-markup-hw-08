@@ -30,6 +30,13 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  &__subtitle {
+  text-align: left;
+  }
 }
 
 &__description {

@@ -68,21 +68,30 @@
   flex-direction: column;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
-  &__block {
-    text-align: left;
-  }
-}
+
 
 &__block:not(:last-child) {
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
+  &__block:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
   &__block:last-child {
     display: flex;
     flex-direction: row;
     align-items: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  &__block {
+    text-align: left;
   }
 }
 
