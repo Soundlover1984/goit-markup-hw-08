@@ -96,6 +96,12 @@
   line-height: 1.176;
 }
 
+@media screen and (max-width: 372px) {
+  &__form-tel {
+    font-size: 27px;
+  }
+}
+
 &__form-mail {
   color: var(--secondary-font-color);
   display: block;
@@ -103,5 +109,26 @@
   font-size: 24px;
   line-height: 1.667;
   margin-top: 32px;
+}
+
+&__form-link {
+  display: block;
+  color: var(--primary-font-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+&__form-link--current {
+  color: var(--accent-color);
+}
+&__form-link:hover, &__form-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 }

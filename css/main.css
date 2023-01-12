@@ -588,8 +588,8 @@ textarea {
   color: var(--primary-font-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition-property: color;
   transition-property: color;
@@ -598,12 +598,6 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-}
-@media screen and (min-width: 768px) {
-  .main-nav__link {
-    font-size: 14px;
-    line-height: 1.14;
-  }
 }
 .main-nav__link--current {
   color: var(--accent-color);
@@ -879,6 +873,11 @@ textarea {
   font-size: 34px;
   line-height: 1.176;
 }
+@media screen and (max-width: 372px) {
+  .main-nav__form-tel {
+    font-size: 27px;
+  }
+}
 .main-nav__form-mail {
   color: var(--secondary-font-color);
   display: block;
@@ -886,6 +885,29 @@ textarea {
   font-size: 24px;
   line-height: 1.667;
   margin-top: 32px;
+}
+.main-nav__form-link {
+  display: block;
+  color: var(--primary-font-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+.main-nav__form-link--current {
+  color: var(--accent-color);
+}
+.main-nav__form-link:hover, .main-nav__form-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .main {
